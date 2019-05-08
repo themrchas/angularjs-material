@@ -7,6 +7,11 @@
     
     <!-- Angular 1.7.8 -->
     <script type="text/javascript" src="app/js/angular-1.7.8.min.js"></script>
+    <script type="text/javascript" src="app/js/angular-animate.min.js"></script>
+    <script type="text/javascript" src="app/js/angular-aria.min.js"></script>
+    <script type="text/javascript" src="app/js/angular-messages.js"></script>
+    <script type="text/javascript" src="app/js/angular-material.min.js"></script>
+    <link rel="stylesheet" href="app/js/angular-material.css">
 
   
 
@@ -17,20 +22,55 @@
     <!-- css used by application-->
     <!-- <link rel="stylesheet" href="css/patterns.css"> -->
 
+<style>
 
+  .doBorder {
+    border:1px solid black;
+  }
+
+  .green {
+    background-color: aquamarine;
+    border:black 1px solid
+  }
+
+</style>
 
 
 
   </head>
 
 <body>
-  <div ng-app="mdBaseApp" ng-controller="ctrlBase"> 
 
-      
-       
-    <h3>{{greeting}}</h3>
-    
+  <div ng-app="mdBaseApp" ng-controller="ctrlBase">
+  
+    <md-content layout-padding>
+      Lorem ipsum dolor sit amet, ne quod novum mei.
+  
+      <h3>{{greeting}}</h3>
+  
+    </md-content>
+  
+       <div style="border:red solid 2px"> 
+   <!--- <div style="border:red solid 2px; width:700px;"> -->
+      <md-grid-list md-cols="4" md-row-height="2:1" md-gutter="12px">
+  
+        <md-grid-tile md-colspan="2" >
+          <h3>Tile 10</h3>
+        </md-grid-tile>
+  
+        <md-grid-tile md-colspan="2" >
+          <h3>Tile 2</h3>
+        </md-grid-tile>
+  
+      </md-grid-list>
+  
     </div>
-
-</body>
+  
+  
+  
+  
+  
+  </div>
+  
+  </body>
 </html>
